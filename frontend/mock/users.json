@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "username": "alicejohnson@gmail.com",
+    "password": "AliceRockz@24",
+    "role": "admin"
+  },
+  {
+    "id": 2,
+    "name": "Bob Smith",
+    "username": "bob@gmail.com",
+    "password": "Bob@24Smith",
+    "role": "student"
+  },
+  {
+    "id": 3,
+    "name": "Charlie Brown",
+    "username": "charlie@gmail.com",
+    "password": "CharlieBrown@2005",
+    "role": "student"
+  }
+]

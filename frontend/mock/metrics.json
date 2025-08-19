@@ -1,0 +1,48 @@
+{
+  "admin": {
+    "orgUsage": {
+      "activeUsers": 120,
+      "totalCourses": 35,
+      "completionRate": 78
+    },
+    "charts": {
+      "userGrowth": {
+        "labels": ["Jan", "Feb", "Mar", "Apr", "May"],
+        "data": [50, 80, 95, 110, 120]
+      },
+      "courseCompletion": {
+        "labels": ["Course A", "Course B", "Course C"],
+        "data": [85, 72, 91]
+      }
+    },
+    "table": [
+      { "user": "Alice", "status": "Active", "coursesCompleted": 12 },
+      { "user": "Bob", "status": "Inactive", "coursesCompleted": 5 }
+    ]
+  },
+  "student": {
+    "progress": {
+      "currentCourse": "React Basics",
+      "completionPercent": 65
+    },
+    "deadlines": [
+      { "course": "React Basics", "dueDate": "2025-08-25" },
+      { "course": "JavaScript Advanced", "dueDate": "2025-09-01" }
+    ],
+    "charts": {
+      "weeklyProgress": {
+        "labels": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        "data": [2, 3, 1, 4, 2, 0, 1]
+      },
+      "quizScores": {
+        "labels": ["Quiz 1", "Quiz 2", "Quiz 3"],
+        "data": [80, 92, 75]
+      }
+    },
+    "table": [
+      { "quiz": "Quiz 1", "score": 80 },
+      { "quiz": "Quiz 2", "score": 92 },
+      { "quiz": "Quiz 3", "score": 75 }
+    ]
+  }
+}

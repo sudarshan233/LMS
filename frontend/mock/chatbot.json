@@ -1,0 +1,34 @@
+{
+  "admin": [
+    {
+      "question": "How is my organization doing?",
+      "answer": "Your organization has 120 active users and a 78% course completion rate."
+    },
+    {
+      "question": "Show user growth chart",
+      "type": "chart",
+      "chartKey": "userGrowth"
+    },
+    {
+      "question": "Show course completion rates",
+      "type": "chart",
+      "chartKey": "courseCompletion"
+    }
+  ],
+  "student": [
+    {
+      "question": "How am I progressing?",
+      "answer": "You are currently 65% complete with your course: React Basics."
+    },
+    {
+      "question": "Show my weekly progress",
+      "type": "chart",
+      "chartKey": "weeklyProgress"
+    },
+    {
+      "question": "Show my quiz scores",
+      "type": "chart",
+      "chartKey": "quizScores"
+    }
+  ]
+}

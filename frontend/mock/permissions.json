@@ -1,0 +1,13 @@
+{
+  "admin": [
+    "view_org_stats",
+    "view_active_users",
+    "view_completion_rates",
+    "view_all_courses"
+  ],
+  "student": [
+    "view_course_progress",
+    "view_deadlines",
+    "view_quiz_history"
+  ]
+}

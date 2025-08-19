@@ -1,0 +1,10 @@
+[
+  {
+    "role": "admin",
+    "description": "Has access to organization-wide statistics and user management"
+  },
+  {
+    "role": "student",
+    "description": "Has access to personal course progress and learning history"
+  }
+]
