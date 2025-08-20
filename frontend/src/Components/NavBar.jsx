@@ -1,15 +1,16 @@
 import { CircleUserRound, BookOpenText, ChartNoAxesCombined, Bolt } from 'lucide-react';
+import {useState} from "react";
 
 const NavBar = (props) => {
-    const {setNavClicked} = props;
+    const {setNavClicked, role, name} = props;
     return (
         <div className={"flex flex-col gap-10 justify-between w-1/5 h-screen p-4 fixed"}>
             <div className={"flex flex-col gap-6 justify-evenly"}>
                 <div className={"flex gap-4 p-2"}>
                     <CircleUserRound className={"stroke-accent"}/>
                     <div>
-                        <p className={"text-xl font-bold"}>JOHN</p>
-                        <p className={"text-xs opacity-50"}>STUDENT</p>
+                        <p className={"text-xl font-bold"}>{name}</p>
+                        <p className={"text-xs opacity-50"}>{role}</p>
                     </div>
                 </div>
                 <div className={"hover:bg-input bg-hover transition-bg duration-[0.4s] p-2 rounded w-full"}>
