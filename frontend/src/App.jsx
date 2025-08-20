@@ -11,6 +11,7 @@ const App = () => {
       <div>
           <Routes>
               <Route path="/" element={<HomePage setRole={setRole} setUserName={setUserName} setPassword={setPassword} />} />
+              <Route path="/student" element={<StudentPage/>} />
               {role === "student" ? <StudentPage /> : null}
           </Routes>
       </div>
