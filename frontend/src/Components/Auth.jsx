@@ -5,6 +5,7 @@ import Login from "./Login.jsx";
 import Signup from "./Signup.jsx";
 
 import users from '../../mock/users.json';
+import toast from 'react-hot-toast';
 
 const Auth = (props) => {
     const [auth, setAuth] = useState('login');
@@ -13,13 +14,19 @@ const Auth = (props) => {
 
     const checkCredentials = async (event) => {
         event.preventDefault();
+        if(!username || !password) return toast.error(
+            'Please fill in all the fields'
+        )
         const user = users.find((user) => {
             return user.username === username && user.password === password;
         })
         if (user) {
+            toast.success('Login Successful');
             setRole(user.role);
             setName(user.name);
             navigate('/student');
+        } else {
+            toast.error('Invalid Credentials');
         }
     }
     return (
