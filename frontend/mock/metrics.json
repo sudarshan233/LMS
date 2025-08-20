@@ -5,6 +5,38 @@
       "totalCourses": 35,
       "completionRate": 78
     },
+    "users" : [
+      {
+        "course": "React Basics",
+        "enrolled": ["Rajesh", "Ramesh"],
+        "description": "Introduction to React components, JSX, props, and state management."
+      },
+      {
+        "course": "JavaScript",
+        "enrolled": ["Bob", "Rajesh", "Ramesh"],
+        "description": "Covers ES6+ fundamentals including variables, functions, arrays, and objects."
+      },
+      {
+        "course": "Express.js",
+        "enrolled": ["Bob", "Charlie"],
+        "description": "Backend framework for building REST APIs and handling HTTP requests."
+      },
+      {
+        "course": "React Advanced",
+        "enrolled": ["Bob", "Rajesh", "Ramesh"],
+        "description": "Covers hooks, context API, performance optimization, and advanced patterns."
+      },
+      {
+        "course": "Node.js",
+        "enrolled": ["Bob", "Charlie"],
+        "description": "Server-side JavaScript runtime covering modules, event loop, and async programming."
+      },
+      {
+        "course": "MongoDB",
+        "enrolled": ["Bob", "Rajesh", "Ramesh"],
+        "description": "NoSQL database fundamentals including CRUD operations and schema design."
+      }
+    ],
     "charts": {
       "userGrowth": {
         "labels": ["Jan", "Feb", "Mar", "Apr", "May"],
