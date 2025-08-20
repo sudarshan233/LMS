@@ -13,6 +13,12 @@ export default {
       },
       borderColor: {
         "accent": "#477BFF"
+      },
+      stroke : {
+        "accent": "#477BFF"
+      },
+      textColor: {
+        "accent": "#477BFF",
       }
     },
   },

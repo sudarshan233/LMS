@@ -21,10 +21,38 @@
     ]
   },
   "student": {
-    "progress": {
-      "currentCourse": "React Basics",
-      "completionPercent": 65
-    },
+    "progress": [
+      {
+        "course": "React Basics",
+        "progress": 65,
+        "description": "Introduction to React components, JSX, props, and state management."
+      },
+      {
+        "course": "JavaScript",
+        "progress": 50,
+        "description": "Covers ES6+ fundamentals including variables, functions, arrays, and objects."
+      },
+      {
+        "course": "Express.js",
+        "progress": 35,
+        "description": "Backend framework for building REST APIs and handling HTTP requests."
+      },
+      {
+        "course": "React Advanced",
+        "progress": 10,
+        "description": "Covers hooks, context API, performance optimization, and advanced patterns."
+      },
+      {
+        "course": "Node.js",
+        "progress": 25,
+        "description": "Server-side JavaScript runtime covering modules, event loop, and async programming."
+      },
+      {
+        "course": "MongoDB",
+        "progress": 80,
+        "description": "NoSQL database fundamentals including CRUD operations and schema design."
+      }
+    ],
     "deadlines": [
       { "course": "React Basics", "dueDate": "2025-08-25" },
       { "course": "JavaScript Advanced", "dueDate": "2025-09-01" }

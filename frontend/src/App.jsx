@@ -1,16 +1,20 @@
 import { Route, Routes } from 'react-router'
+import {useState} from "react";
 import HomePage from "./Pages/HomePage.jsx";
 import StudentPage from "./Pages/StudentPage.jsx";
 
 const App = () => {
-  return (
+    const [role, setRole] = useState("");
+    const [username, setUserName] = useState("");
+    const [password, setPassword] = useState("");
+    return (
       <div>
           <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/student" element={<StudentPage />} />
+              <Route path="/" element={<HomePage setRole={setRole} setUserName={setUserName} setPassword={setPassword} />} />
+              {role === "student" ? <StudentPage /> : null}
           </Routes>
       </div>
-  );
+    );
 };
 
 export default App;
