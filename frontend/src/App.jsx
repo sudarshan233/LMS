@@ -1,7 +1,8 @@
 import { Route, Routes } from 'react-router-dom'
 import {useState} from "react";
 import HomePage from "./Pages/HomePage.jsx";
-import StudentPage from "./Pages/StudentPage.jsx";
+import MainPage from "./Pages/MainPage.jsx";
+import AdminPage from "./Pages/AdminPage.jsx";
 
 const App = () => {
     const [role, setRole] = useState("");
@@ -13,7 +14,8 @@ const App = () => {
           <Routes>
               <Route path="/" element={<HomePage role={role} username={username} password={password}
                                                  setRole={setRole} setUserName={setUserName} setPassword={setPassword} setName={setName} />} />
-              <Route path="/student" element={<StudentPage role={role} name={name}/>} />
+              <Route path="/main" element={<MainPage role={role} name={name}/>} />
+              {/*<Route path="/admin" element={<AdminPage role={role} name={name}/>} />*/}
           </Routes>
       </div>
     );

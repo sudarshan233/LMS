@@ -16,15 +16,18 @@ const NavBar = (props) => {
                 <div className={"hover:bg-input bg-hover transition-bg duration-[0.4s] p-2 rounded w-full"}>
                     <button className={"flex gap-2"} onClick={() => setNavClicked("Courses")}>
                         <BookOpenText className={"stroke-accent"}/>
-                        <p className={'text-sm'}>My Courses</p>
+                        <p className={'text-sm'}>{role === "admin" ? "All courses" : "My Courses"}</p>
                     </button>
                 </div>
                 <div className={"hover:bg-input bg-hover transition-bg duration-[0.4s] p-2 rounded w-full"}>
                     <button className={"flex gap-2"} onClick={() => setNavClicked("Stats")}>
                         <ChartNoAxesCombined className={"stroke-accent"}/>
-                        <p className={'text-sm'}>My Stats</p>
+                        <p className={'text-sm'}>{role === "admin" ? "App Stats" : "My Stats"}</p>
                     </button>
                 </div>
+                {/*{role === "admin" && <div className={"hover:bg-input bg-hover transition-bg duration-[0.4s] p-2 rounded w-full"}>*/}
+
+                {/*</div>}*/}
             </div>
             <div className={"hover:bg-input bg-hover transition-bg duration-[0.4s] p-2 rounded"}>
                 <button className={"flex gap-2"}>

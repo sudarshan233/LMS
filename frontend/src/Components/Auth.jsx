@@ -24,7 +24,8 @@ const Auth = (props) => {
             toast.success('Login Successful');
             setRole(user.role);
             setName(user.name);
-            navigate('/student');
+            navigate('/main');
+
         } else {
             toast.error('Invalid Credentials');
         }

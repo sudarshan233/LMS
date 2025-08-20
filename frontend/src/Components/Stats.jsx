@@ -1,5 +1,6 @@
 
-const Stats  = () => {
+const Stats  = (props) => {
+    const {role} = props;
     return (
         <div></div>
     );

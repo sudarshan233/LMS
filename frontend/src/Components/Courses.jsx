@@ -1,9 +1,10 @@
 import metrics from '../../mock/metrics.json';
 import Course from "./Course.jsx";
 
-const Courses = () => {
+const Courses = (props) => {
     const {admin, student} = metrics;
     const {progress} = student;
+    const {role} = props;
     return (
         <div className={"bg-input w-full h-full flex gap-4 flex-wrap p-10 ml-96"}>
             {progress.map((value, index) => {
